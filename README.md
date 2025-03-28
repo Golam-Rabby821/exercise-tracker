@@ -111,58 +111,39 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 
 ## Installation 🛠️
 
+
+**Clone the repository:**
 ```bash
-Clone the repository:
-
 git clone https://github.com/yourusername/exercise-tracker.git
+```
 
-
-Install dependencies:
-
+**Install dependencies:**
+```bash
 npm install
+```
 
-Create .env file:
-
-
+**Create .env file:**
+```js
 MONGODB_URI=your_mongodb_connection_string
 PORT=3000
-Start server:
-
-npm start
-
 ```
-Tech Stack 💻
-Backend: Node.js + Express
 
-Database: MongoDB (with Mongoose ODM)
+**Start server:**
+```bash
+npm start
+```
 
-Date Handling: JavaScript Date API
+**Tech Stack 💻**
+**Backend:** Node.js + Express
+**Database:** MongoDB (with Mongoose ODM)
+**Date Handling:** JavaScript Date API
+**Environment Management:** dotenv
 
-Environment Management: dotenv
-
-Testing 🔍
+**Testing 🔍**
 Test with:
+1. Postman
+2. cURL
+3. FreeCodeCamp's automated test suite
 
-Postman
-
-cURL
-
-FreeCodeCamp's automated test suite
-
-License 📄
+**License 📄**
 MIT License - see LICENSE for details
-
-Copy
-
-This version includes:
-
-1. Badges for key technologies
-2. Clear endpoint documentation with examples
-3. Test case matrix showing all requirements are met
-4. Improved visual hierarchy
-5. Emoji visual indicators
-6. Proper code formatting
-7. Environment setup instructions
-8. License information
-
-The test case table specifically addresses all FreeCodeCamp requirements, making it easy for reviewers to verify compliance. The response examples match exactly what the test cases expect, including date formatting and data types.
