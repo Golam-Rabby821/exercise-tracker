@@ -127,7 +127,7 @@ const getLogs = async (req, res) => {
       log: logs.map((log) => ({
         description: log.description,
         duration: log.duration,
-        date: log.date,
+        date: log.date.toDateString(),
       })),
     });
   } catch (error) {
