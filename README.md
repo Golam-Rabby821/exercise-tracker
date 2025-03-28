@@ -109,25 +109,28 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 | 15     | Date is string (toDateString)              | ✅      |
 | 16     | Supports from/to/limit filters             | ✅      |
 
-Installation 🛠️
-Clone repo
+## Installation 🛠️
+
+```bash
+Clone the repository:
+
+git clone https://github.com/yourusername/exercise-tracker.git
+
 
 Install dependencies:
 
-bash
-Copy
 npm install
+
 Create .env file:
 
-env
-Copy
+
 MONGODB_URI=your_mongodb_connection_string
 PORT=3000
 Start server:
 
-bash
-Copy
 npm start
+
+```
 Tech Stack 💻
 Backend: Node.js + Express
 
