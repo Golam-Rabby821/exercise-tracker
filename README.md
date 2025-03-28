@@ -4,7 +4,7 @@
 [![Express.js](https://img.shields.io/badge/Express.js-4.x-blue.svg)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-7.x-green.svg)](https://www.mongodb.com/)
 
-A REST API for tracking exercises and users, built with Node.js, Express, and MongoDB. Designed to fulfill FreeCodeCamp's Backend Certification requirements.
+A REST API for tracking exercises and users, built with Node.js, Express, and MongoDB. Designed to fulfill FreeCodeCamp's Backend Certification requirements. The freeCodeCamp boilerplate for the Exercise Tracker project and instructions for building this project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker
 
 ## Features ✅
 
@@ -14,54 +14,54 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 - Date range filtering
 - Result limit control
 
-## API Endpoints 🌐
+## API Documentation 📚
 
-### Create User
-
+### 1. Create User
+**Endpoint**  
 `POST /api/users`
-**Request:**
 
+**Request Body**  
 ```json
-{ "username": "fcc_user" }
+{
+  "username": "fcc_user"
+}
 ```
 
-The boilerplate for the Exercise Tracker project and instructions for building this project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker
-
-Response:
-
-json
-Copy
+**Response:** 
+```json
 {
 "username": "fcc_user",
 "\_id": "507f1f77bcf86cd799439011"
 }
-List All Users
-GET /api/users
-Response:
+```
 
-json
-Copy
+**List All Users:**
+`GET /api/users`
+**Response:** 
+
+```json
 [
 {
 "username": "fcc_user",
 "_id": "507f1f77bcf86cd799439011"
 }
 ]
-Add Exercise
-POST /api/users/:\_id/exercises
-Request:
+```
 
-json
-Copy
+**Add Exercise:**
+`POST /api/users/:\_id/exercises`
+**Request Body**  
+```json
 {
 "description": "pushups",
 "duration": 30,
 "date": "2023-08-15"
 }
-Response:
+```
 
-json
-Copy
+**Response:** 
+
+```json
 {
 "\_id": "507f1f77bcf86cd799439011",
 "username": "fcc_user",
@@ -69,12 +69,13 @@ Copy
 "duration": 30,
 "date": "Tue Aug 15 2023"
 }
-Get Exercise Logs
-GET /api/users/:\_id/logs?from=2023-01-01&to=2023-12-31&limit=5
-Response:
+```
 
-json
-Copy
+**Get Exercise Logs:**
+`GET /api/users/:\_id/logs?from=2023-01-01&to=2023-12-31&limit=5`
+**Response:** 
+
+```json
 {
 "\_id": "507f1f77bcf86cd799439011",
 "username": "fcc_user",
@@ -84,9 +85,9 @@ Copy
 "description": "pushups",
 "duration": 30,
 "date": "Tue Aug 15 2023"
+}]
 }
-]
-}
+```
 Test Case Coverage ✔️
 Test # Requirement Status
 1 Original project implementation ✅
