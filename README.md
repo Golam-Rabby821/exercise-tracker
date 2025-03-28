@@ -133,13 +133,13 @@ PORT=3000
 npm start
 ```
 
-**Tech Stack 💻**
-**Backend:** Node.js + Express
-**Database:** MongoDB (with Mongoose ODM)
-**Date Handling:** JavaScript Date API
-**Environment Management:** dotenv
+## Tech Stack 💻
+- **Backend:** Node.js + Express
+- **Database:** MongoDB (with Mongoose ODM)
+- **Date Handling:** JavaScript Date API
+- **Environment Management:** dotenv
 
-**Testing 🔍**
+## Testing 🔍
 Test with:
 1. Postman
 2. cURL
