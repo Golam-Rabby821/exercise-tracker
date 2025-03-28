@@ -31,7 +31,7 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 ```json
 {
 "username": "fcc_user",
-"\_id": "507f1f77bcf86cd799439011"
+"_id": "507f1f77bcf86cd799439011"
 }
 ```
 
@@ -63,7 +63,7 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 
 ```json
 {
-"\_id": "507f1f77bcf86cd799439011",
+"_id": "507f1f77bcf86cd799439011",
 "username": "fcc_user",
 "description": "pushups",
 "duration": 30,
@@ -77,7 +77,7 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 
 ```json
 {
-"\_id": "507f1f77bcf86cd799439011",
+"_id": "507f1f77bcf86cd799439011",
 "username": "fcc_user",
 "count": 3,
 "log": [
@@ -88,24 +88,27 @@ A REST API for tracking exercises and users, built with Node.js, Express, and Mo
 }]
 }
 ```
-Test Case Coverage ✔️
-Test # Requirement Status
-1 Original project implementation ✅
-2 POST to /api/users creates user ✅
-3 User response includes username & \_id ✅
-4 GET /api/users returns all users ✅
-5 Users endpoint returns array ✅
-6 Array elements contain username & \_id ✅
-7 POST exercises with optional date ✅
-8 Exercise response includes user data ✅
-9 GET logs returns exercise history ✅
-10 Log response includes count ✅
-11 Log array in response ✅
-12 Log items have description, duration, date ✅
-13 Description is string ✅
-14 Duration is number ✅
-15 Date is string (toDateString) ✅
-16 Supports from/to/limit filters ✅
+## Test Case Coverage ✔️
+
+| Test # | Requirement                                   | Status |
+|--------|----------------------------------------------|--------|
+| 1      | Original project implementation             | ✅      |
+| 2      | POST to /api/users creates user             | ✅      |
+| 3      | User response includes username & _id       | ✅      |
+| 4      | GET /api/users returns all users            | ✅      |
+| 5      | Users endpoint returns array                | ✅      |
+| 6      | Array elements contain username & _id       | ✅      |
+| 7      | POST exercises with optional date           | ✅      |
+| 8      | Exercise response includes user data        | ✅      |
+| 9      | GET logs returns exercise history           | ✅      |
+| 10     | Log response includes count                 | ✅      |
+| 11     | Log array in response                       | ✅      |
+| 12     | Log items have description, duration, date  | ✅      |
+| 13     | Description is string                       | ✅      |
+| 14     | Duration is number                          | ✅      |
+| 15     | Date is string (toDateString)              | ✅      |
+| 16     | Supports from/to/limit filters             | ✅      |
+
 Installation 🛠️
 Clone repo
 
